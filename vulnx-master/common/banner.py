@@ -31,7 +31,7 @@ def banner():
              '0c        -VulnX-       ,Ol             
                ;.                     :.   
 
-    %s# Coded By Anouar Ben Saad -%s @anouarbensaad      
+    %s# Coded By Abdul faheem A -%s website scanner    
                                            %s"""
           %
           (bannerblue, bannerblue2,
