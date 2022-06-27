@@ -1,0 +1,243 @@
+<body>
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-06-27 13:16 EDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 13:16
+Completed NSE at 13:16, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 13:16
+Completed NSE at 13:16, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 13:16
+Completed NSE at 13:16, 0.00s elapsed
+Initiating ARP Ping Scan at 13:16
+Scanning 10.0.2.5 [1 port]
+Completed ARP Ping Scan at 13:16, 0.01s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 13:16
+Completed Parallel DNS resolution of 1 host. at 13:16, 0.01s elapsed
+Initiating SYN Stealth Scan at 13:16
+Scanning 10.0.2.5 [65535 ports]
+Discovered open port 445/tcp on 10.0.2.5
+Discovered open port 80/tcp on 10.0.2.5
+Discovered open port 22/tcp on 10.0.2.5
+Discovered open port 8080/tcp on 10.0.2.5
+Discovered open port 139/tcp on 10.0.2.5
+Discovered open port 143/tcp on 10.0.2.5
+Discovered open port 443/tcp on 10.0.2.5
+Discovered open port 8081/tcp on 10.0.2.5
+Discovered open port 5001/tcp on 10.0.2.5
+Completed SYN Stealth Scan at 13:16, 1.30s elapsed (65535 total ports)
+Initiating Service scan at 13:16
+Scanning 9 services on 10.0.2.5
+Completed Service scan at 13:16, 12.03s elapsed (9 services on 1 host)
+Initiating OS detection (try #1) against 10.0.2.5
+NSE: Script scanning 10.0.2.5.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 13:16
+Completed NSE at 13:16, 5.55s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 13:16
+Completed NSE at 13:16, 0.07s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 13:16
+Completed NSE at 13:16, 0.00s elapsed
+Nmap scan report for 10.0.2.5
+Host is up, received arp-response (0.00050s latency).
+Scanned at 2022-06-27 13:16:23 EDT for 20s
+Not shown: 65526 closed tcp ports (reset)
+PORT     STATE SERVICE     REASON         VERSION
+22/tcp   open  ssh         syn-ack ttl 64 OpenSSH 5.3p1 Debian 3ubuntu4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 ea:83:1e:45:5a:a6:8c:43:1c:3c:e3:18:dd:fc:88:a5 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAPL5FjD0hlJl43QNZ9/+yluxtM5fgbV6WE7rQaGO/zIoEBfCL1byPWsD9oBcb5gjav4fFmfwCBk8IsI5J2JBRjrhVHhANmR5cmOG9c9suWLcV8h9L/SC5RU05s8hK8ZRQ981pGmm06yndBsLTLU1PviTlOkEstAlzezdx6weE2L9AAAAFQC2Rf/CKrXiqAC55sNlWEsFsTD6sQAAAIANL4oyRYNZD2+pPnjNqkdYy/AKEkV6hzyHJ6+jH2EZYLeHbx1CcAY2c3QDNsiqHaTAtY89P5XvHmLReyfWnGWhYGu5KaQaDUntNqEBJ2joRLxeDWPoQGPms7sy+Zb5JzzwG//6ebkFvcdDvLiOIcoESIcypS7btSqGdm8MmZNonAAAAIA/c02lT7X0v8xQ1GQ4txpsohnYvIeFWQycL8JYoeNX3k8lBYUaCGORtwKIA+d4plKbLZGp2NbEK1ycQrp/zCctVJW1ydgHR88mrt5ol2eKmt2yIhzgNSzPMn+G1C4MctZXBYJYbjGgKLFyMddPy/BYFeiPdKWisejZAfPhhOW9Qw==
+|   2048 3a:94:d8:3f:e0:a2:7a:b8:c3:94:d7:5e:00:55:0c:a7 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAwapaepasy2vyKGiRMUrMe4IzrDzKpRodz81xlfXenZyZ/eg9uEIxeKATXm1X9iCZ27f+nnrhtswKKpHqpEhjuyiUGTgjT6cxSSJq4bq5SHj07uMtIwWtkRgcvsg3bERuc35AIx12+t6S1Iy76aglqmkAK+14RBSEYGHRb4/Kch+p9nZyc8zXnjIChZNOAMdXcDJ/MdfeBd5aSx0CopjgEfC8jEoH1rc+atUHshqB2hgQOqJPA3018QElQ8NdeHnBWKHGooVqCBHNltiKsW/Kd0dD7ZOQS38kuthGRDQq4NuAeshFjM3a1756jUBlnWEiL4zO8Cbj6OBxl87CqCafDQ==
+80/tcp   open  http        syn-ack ttl 64 Apache httpd 2.2.14 ((Ubuntu) mod_mono/2.4.3 PHP/5.3.2-1ubuntu4.30 with Suhosin-Patch proxy_html/3.0.1 mod_python/3.3.1 Python/2.6.5 mod_ssl/2.2.14 OpenSSL...)
+|_http-server-header: Apache/2.2.14 (Ubuntu) mod_mono/2.4.3 PHP/5.3.2-1ubuntu4.30 with Suhosin-Patch proxy_html/3.0.1 mod_python/3.3.1 Python/2.6.5 mod_ssl/2.2.14 OpenSSL/0.9.8k Phusion_Passenger/4.0.38 mod_perl/2.0.4 Perl/v5.10.1
+|_http-title: owaspbwa OWASP Broken Web Applications
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-favicon: Unknown favicon MD5: 1F8C0B08FB6B556A6587517A8D5F290B
+139/tcp  open  netbios-ssn syn-ack ttl 64 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+143/tcp  open  imap        syn-ack ttl 64 Courier Imapd (released 2008)
+|_imap-capabilities: completed CAPABILITY QUOTA CHILDREN SORT OK ACL2=UNIONA0001 UIDPLUS NAMESPACE ACL IDLE IMAP4rev1 THREAD=ORDEREDSUBJECT THREAD=REFERENCES
+443/tcp  open  ssl/http    syn-ack ttl 64 Apache httpd 2.2.14 ((Ubuntu) mod_mono/2.4.3 PHP/5.3.2-1ubuntu4.30 with Suhosin-Patch proxy_html/3.0.1 mod_python/3.3.1 Python/2.6.5 mod_ssl/2.2.14 OpenSSL...)
+|_ssl-date: 2022-06-27T17:16:43+00:00; 0s from scanner time.
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.2.14 (Ubuntu) mod_mono/2.4.3 PHP/5.3.2-1ubuntu4.30 with Suhosin-Patch proxy_html/3.0.1 mod_python/3.3.1 Python/2.6.5 mod_ssl/2.2.14 OpenSSL/0.9.8k Phusion_Passenger/4.0.38 mod_perl/2.0.4 Perl/v5.10.1
+| ssl-cert: Subject: commonName=owaspbwa
+| Issuer: commonName=owaspbwa
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2013-01-02T21:12:38
+| Not valid after:  2022-12-31T21:12:38
+| MD5:   0fb9 ca0b e9b7 b26f de6c 3555 6186 2399
+| SHA-1: e469 e1f2 9877 40c3 3aec ee7c f630 ca19 31be 05ae
+| -----BEGIN CERTIFICATE-----
+| MIIBnTCCAQYCCQDmhw3dcsK55zANBgkqhkiG9w0BAQUFADATMREwDwYDVQQDEwhv
+| d2FzcGJ3YTAeFw0xMzAxMDIyMTEyMzhaFw0yMjEyMzEyMTEyMzhaMBMxETAPBgNV
+| BAMTCG93YXNwYndhMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIxXtfOh6T
+| ceRLAd5LAfA5vFL/uafR15KK+k0Yr1xNjjuPd7iX/AKdUh5wAzM0MqoZeEKi72Hw
+| iTezYFJFLvpMQ/6PB+ALtxYnAf7vQkSxmQLsoeKRowKZOV4nIjuEFKCp3ERk7xDb
+| Ons5bt62IG9Hxji5cbJMaq4CIMsQc1NHtQIDAQABMA0GCSqGSIb3DQEBBQUAA4GB
+| AIgFAJdNKSiApOmwMqBq4oIOrCOKUdDv9is3wJWaz1JeY3lop9WFPzr1RYE8Kcpg
+| +2+oIaiUwN8HDAsaMZGfWzv2rncBQOvyfqxARKzL6H+CZ+Rb5MQos7t5OtwHs1Ht
+| RU3A6pPOPLai+/ly1/aCwmqNTxpghTNFmVLloxT/HJao
+|_-----END CERTIFICATE-----
+|_http-title: owaspbwa OWASP Broken Web Applications
+|_http-favicon: Unknown favicon MD5: 1F8C0B08FB6B556A6587517A8D5F290B
+445/tcp  open  netbios-ssn syn-ack ttl 64 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+5001/tcp open  java-object syn-ack ttl 64 Java Object Serialization
+8080/tcp open  http        syn-ack ttl 64 Apache Tomcat/Coyote JSP engine 1.1
+|_http-server-header: Apache-Coyote/1.1
+|_http-title: Site doesn't have a title.
+8081/tcp open  http        syn-ack ttl 64 Jetty 6.1.25
+|_http-server-header: Jetty(6.1.25)
+| http-methods: 
+|   Supported Methods: GET HEAD POST TRACE OPTIONS
+|_  Potentially risky methods: TRACE
+|_http-title: Choose Your Path
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port5001-TCP:V=7.92%I=7%D=6/27%Time=62B9E5EE%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,4,"\xac\xed\0\x05");
+MAC Address: 08:00:27:FB:31:EC (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6
+OS details: Linux 2.6.17 - 2.6.36
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=6/27%OT=22%CT=1%CU=35467%PV=Y%DS=1%DC=D%G=Y%M=080027%T
+OS:M=62B9E5FB%P=x86_64-pc-linux-gnu)SEQ(SP=C3%GCD=1%ISR=CD%TI=Z%CI=Z%II=I%T
+OS:S=8)OPS(O1=M5B4ST11NW6%O2=M5B4ST11NW6%O3=M5B4NNT11NW6%O4=M5B4ST11NW6%O5=
+OS:M5B4ST11NW6%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=1
+OS:6A0)ECN(R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A
+OS:=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=Y%DF=Y%T=40%W=16A0%S=O%A=S+%F=AS%O=M5B4ST11
+OS:NW6%RD=0%Q=)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40
+OS:%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q
+OS:=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164
+OS:%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 0.017 days (since Mon Jun 27 12:52:47 2022)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=195 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| nbstat: NetBIOS name: OWASPBWA, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   OWASPBWA<00>         Flags: <unique><active>
+|   OWASPBWA<03>         Flags: <unique><active>
+|   OWASPBWA<20>         Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+| Statistics:
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 65199/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 5869/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 42163/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 62543/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+|_smb2-time: Protocol negotiation failed (SMB2)
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_smb2-security-mode: Couldn't establish a SMBv2 connection.
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.50 ms 10.0.2.5
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 13:16
+Completed NSE at 13:16, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 13:16
+Completed NSE at 13:16, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 13:16
+Completed NSE at 13:16, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 21.55 seconds
+           Raw packets sent: 65555 (2.885MB) | Rcvd: 65551 (2.623MB)
+[1;0;34m
+                                                      
+                    .:.        .:,                    
+                   xM;           XK.                  
+                  dx'            .lO.                 
+                 do                ,0.                
+             .c.lN'      ,  '.     .k0.:'             
+              xMMk;d;''cOM0kWXl,',locMMX.             
+              .NMK.   :WMMMMMMMx    dMMc              
+               lMMO  lWMMMMMMMMMO. lMMO               
+                cWMxxMMMMMMMMMMMMKlWMk                
+                 .xWMMMMMMMMMMMMMMM0,[1;1;94m                 
+                   .,OMd,,,;0MMMO,.                   
+             .l0O.[1;97mVXVX[1;1;94mOX.[1;97mVXVX[1;1;94m0MO[1;97mVXVX[1;1;94m.0Kd,             
+            lWMMO0[1;97mVXVX0[1;1;94mOX.[1;97mVXVX[1;1;94ml[1;97mVXVX[1;1;94m.VXNMMO            
+           .MMX;.N0[1;97mVXVX0[1;1;94m0X.[1;97mVXVXVX0[1;1;94m.0M:.OMMl           
+          .OXc  ,MMO[1;97mVXVX0[1;1;94mVX[1;97m .VXVX0[1;1;94m0MMo  ,0X'          
+          0x.  :XMMMk[1;97mVXVX.[1;1;94mXO.[1;97mVXVX[1;1;94mdMMMWo.  :X'         
+         .d  'NMMMMMMk[1;97mVXVX[1;1;94m..[1;97mVXVX0[1;1;94m.XMMMMWl  ;c         
+            'NNoMMMMMMx[1;97mVXVXVXVXVX0.[1;1;94mXMMk0Mc            
+           .NMx OMMMMMMd[1;97mVXVXVX[1;1;94ml[1;97mVXVX[1;1;94m.NW.;MMc           
+          :NMMd .NMMMMMMd[1;97mVXVX[1;1;94mdMd,,,,oc ;MMWx          
+          .0MN,  'XMMMMMMo[1;97mVX[1;1;94moMMMMMMWl   0MW,          
+           .0.    .xWMMMMM:lMMMMMM0,     kc           
+            ,O.     .:dOKXXXNKOxc.      do            
+             '0c        -VulnX-       ,Ol             
+               ;.                     :.   
+
+    [1;97m# Coded By Abdul faheem A -[1;93m website scanner    
+                                           [1;0m
+
+ [1;94m[[1;97mTarget[1;94m][1;97m => http://10.0.2.5/[1;0m 
+ 
+[1;97m −−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+ [1;93m[~][1;97m looking for cms
+ [1;92m[+][1;97m CMS : Wordpress
+[1;97m −−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+ [1;93m[~][1;97m Exploits Scan
+ [1;94m[?][1;97m Wysija          		 [91mFAIL[1m
+ [1;94m[?][1;97m Blaze SlideShow  		 [91mFAIL[1m
+ [1;94m[?][1;97m Synoptic          		 [91mFAIL[1m
+ [1;94m[?][1;97m Catpro          		 [91mFAIL[1m
+ [1;94m[?][1;97m CherryFramework  		 [91mFAIL[1m
+ [1;94m[?][1;97m Download Manager  		 [91mFAIL[1m
+ [1;94m[?][1;97m Formcrafts       		 [91mFAIL[1m
+ [1;94m[?][1;97m Job Manager      		 [91mFAIL[1m
+ [1;94m[?][1;97m Showbiz Pro      		 [91mFAIL[1m
+ [1;94m[?][1;97m WP Shop          		 [91mFAIL[1m
+ [1;94m[?][1;97m PowerZoom        		 [91mFAIL[1m
+ [1;94m[?][1;97m Revsmoder       		 [91mFAIL[1m
+ [1;94m[?][1;97m Ads Manager      		 [91mFAIL[1m
+ [1;94m[?][1;97m InBoundio Market 		 [91mFAIL[1m
+ [1;94m[?][1;97m AdBlocker        		 [91mFAIL[1m
+ [1;94m[?][1;97m LevoSlider Show 		 [91mFAIL[1m
+[1;97m −−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+ [1;93m[~][1;97m OS / Server Information
+[1;97m −−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+ [1;93m[~][1;97m Web Hosting Information
+ [1;92m[+][1;97m [1;97mServer :[1;0m Apache/2.2.14
+ [1;92m[+][1;97m [1;97mOS :[1;0m Ubuntu
+[1;97m −−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+ [1;93m[~][1;97m CMS Information Gathering
+[1;97m −−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+
+ [1;93m[[1;97m Elapsed Time [1;93m][1;97m => 3.98 seconds 
